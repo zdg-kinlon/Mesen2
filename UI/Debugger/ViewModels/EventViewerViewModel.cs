@@ -24,6 +24,7 @@ using System.Reflection;
 
 namespace Mesen.Debugger.ViewModels
 {
+	[SuppressMessage("Trimming", "IL2075:\'this\' argument does not satisfy \'DynamicallyAccessedMembersAttribute\' in call to target method. The return value of the source method does not have matching annotations.")]
 	public class EventViewerViewModel : DisposableViewModel
 	{
 		public const int HdmaChannelFlag = 0x40;

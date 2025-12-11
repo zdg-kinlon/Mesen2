@@ -4,10 +4,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 
 namespace Mesen.Utilities
 {
+	[SuppressMessage("Trimming", "IL2075:\'this\' argument does not satisfy \'DynamicallyAccessedMembersAttribute\' in call to target method. The return value of the source method does not have matching annotations.")]
 	public static class ReactiveHelper
 	{
 		public static IDisposable RegisterRecursiveObserver(ReactiveObject target, PropertyChangedEventHandler handler)
